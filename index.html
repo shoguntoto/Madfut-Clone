@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Madfut Clone</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <link href='https://fonts.googleapis.com/css?family=Cookie' rel='stylesheet' type='text/css'>
+
+</head>
+
+<body>
+
+  <header class="header-fixed">
+
+    <div class="header-limiter">
+
+      <h1><a href="#">Madfut<span>PC</span></a></h1>
+
+      <nav>
+        <a href="#" class="selected">Accueil</a>
+        <a href="./pages/packs.html">Packs</a>
+        <a href="#">Collection</a>
+        <a href="#">Login</a>
+        <a href="#">Contact</a>
+      </nav>
+
+    </div>
+
+  </header>
+  <div class="header-fixed-placeholder"></div>
+  <div class="container">
+    <div class="box">
+      <div class="left">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTas7ZJM0e7Hvag6ii26bgLDhV8xnHA_z7z06LNxsOD-A&s"
+          alt="mf_logo" />
+      </div>
+      <div class="right">
+        <p> Vivamus nec quam feugiat, efficitur est nec, tempor metus. Fusce commodo ipsum at auctor feugiat. Curabitur
+          luctus, dolor a tristique venenatis, metus risus faucibus ipsum, convallis sagittis ligula urna quis quam. Ut
+          vel eros sed turpis venenatis tempus vel eu massa. Praesent auctor blandit consequat. Sed ornare quis turpis.
+        </p>
+      </div>
+    </div>
+    <div class="box">
+      <div class="left">
+        <p> Vivamus nec quam feugiat, efficitur est nec, tempor metus. Fusce commodo ipsum at auctor feugiat. Curabitur
+          luctus, dolor a tristique venenatis, metus risus faucibus ipsum, convallis sagittis ligula urna quis quam. Ut
+          vel eros sed turpis venenatis tempus vel eu massa. Praesent auctor blandit consequat. Sed ornare quis turpis.
+        </p>
+      </div>
+      <div class="right">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTas7ZJM0e7Hvag6ii26bgLDhV8xnHA_z7z06LNxsOD-A&s"
+          alt="mf_logo" />
+      </div>
+    </div>
+    <div class="box">
+      <div class="left">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTas7ZJM0e7Hvag6ii26bgLDhV8xnHA_z7z06LNxsOD-A&s"
+          alt="mf_logo" />
+      </div>
+      <div class="right">
+        <p> Vivamus nec quam feugiat, efficitur est nec, tempor metus. Fusce commodo ipsum at auctor feugiat. Curabitur
+          luctus, dolor a tristique venenatis, metus risus faucibus ipsum, convallis sagittis ligula urna quis quam. Ut
+          vel eros sed turpis venenatis tempus vel eu massa. Praesent auctor blandit consequat. Sed ornare quis turpis.</p>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script>
+
+    $(document).ready(function () {
+
+      var showHeaderAt = 150;
+
+      var win = $(window),
+        body = $('body');
+
+      if (win.width() > 400) {
+        win.on('scroll', function (e) {
+
+          if (win.scrollTop() > showHeaderAt) {
+            body.addClass('fixed');
+          }
+          else {
+            body.removeClass('fixed');
+          }
+        });
+
+      }
+
+    });
+
+  </script>
+</body>
+
+</html>
